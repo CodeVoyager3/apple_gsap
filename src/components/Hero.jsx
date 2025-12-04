@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 function Hero() {
     const videoRef = React.useRef();
-
+// Set video playback rate on mount
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.playbackRate=2.0;
